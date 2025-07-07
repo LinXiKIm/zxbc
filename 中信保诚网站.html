@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中信保诚资产管理</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGrD1C6luULQPO8q_1Chu2c7eoXCnxSx6sA&shttps://www.google.com/url?sa=i&url=https%3A%2F%2Fkenbarrettphotos.com%2Ffeatured%2Fmountain-layer-sunrise-ken-barrett.html&psig=AOvVaw0aBnM-8D1FuD1ificxEUkg&ust=1751958163162000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOja6fGWqo4DFQAAAAAdAAAAABAE') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .main {
+      flex: 1;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      padding: 20px 60px;
+      background: transparent;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      height: 60px;
+      margin-right: 40px;
+    }
+
+    .nav {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      font-size: 16px;
+      position: relative;
+    }
+
+    .nav li {
+      position: relative;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .nav .active {
+      color: #C02822;
+      border-bottom: 2px solid #C02822;
+    }
+
+    .nav li:hover .mega-menu {
+      display: flex;
+    }
+
+    .mega-menu {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background: #fff;
+      padding: 20px 30px;
+      gap: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      z-index: 99;
+      min-width: 700px;
+    }
+
+    .mega-menu .column {
+      min-width: 150px;
+    }
+
+    .mega-menu .column h4 {
+      margin-bottom: 10px;
+      color: #C02822;
+      font-size: 16px;
+    }
+
+    .mega-menu .column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mega-menu .column ul li {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .subhead {
+      color: #C02822;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 55px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: 20px;
+      margin: 10px 0 30px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 60px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 20px;
+      width: 280px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      font-size: 23px;
+      margin-bottom: 5px;
+    }
+
+    .card .icon {
+      font-size: 30px;
+      color: #C02822;
+      text-align: right;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.5); /* 调低透明度 */
+      backdrop-filter: blur(10px); /* 加毛玻璃效果 */
+      -webkit-backdrop-filter: blur(10px); /* Safari 支持 */
+      font-size: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3); /* 轻微分割线 */
+    }
+
+
+    .links {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <img src="https://www.citictrust.com.cn/static/v1/images/d-com-logo1.png" class="logo" alt="中信保诚Logo">
+    <ul class="nav">
+      <li class="active">首页</li>
+      <li>
+        关于我们
+        <div class="mega-menu">
+          <div class="column">
+            <h4>公司信息</h4>
+            <ul>
+              <li>公司简介</li>
+              <li>股权结构</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>加入与联系</h4>
+            <ul>
+              <li>加入我们</li>
+              <li>联系我们</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>新闻与动态</h4>
+            <ul>
+              <li>新闻中心</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4></h4>
+            <img src="https://www.citictrust.com.cn/static/v1/images/d-com-logo1.png" alt="宣传图" style="width: 120px; border-radius: 6px;">
+          </div>
+        </div>
+      </li>
+      <li>投资管理</li>
+      <li>风险管理</li>
+      <li>公开信息披露</li>
+    </ul>
+  </header>
+
+  <div class="main">
+    <section class="hero">
+      <div class="subhead">ASSET MANAGEMENT</div>
+      <h1>聆听所至，信诚所在</h1>
+      <p class="desc">专业化运作 / 市场化经营 / 精细化管理 / 差异化竞争</p>
+      <div class="cards">
+        <div class="card">
+          <h2>新闻中心</h2>
+          <p>敬请期待！</p>
+          <div class="icon">🌐</div>
+        </div>
+        <div class="card">
+          <h2>关于我们</h2>
+          <p>公司简介</p>
+          <div class="icon">💴</div>
+        </div>
+        <div class="card">
+          <h2>公开信息披露</h2>
+          <p>中信保诚资产管理有限责任公司20...</p>
+          <p>中信保诚资产管理有限责任公司重...</p>
+          <div class="icon">📜</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="links">加入我们 ｜ 友情链接</div>
+    <div class="links">
+      <a href="http://group.citic/" target="_blank" title="中信集团">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmRBx5LDPiNwA9X-AjdFFUDTwn8c71qiCk4g&s" alt="中信集团" style="height: 32px; margin: 0 10px; vertical-align: middle;">
+      </a>
+      <a href="https://www.citic-prudential.com.cn/" target="_blank" title="中信保诚人寿">
+        <img src="https://sqs.citicpruagents.com.cn/xyt/resources/imgs/logo.png" alt="中信保诚人寿" style="height: 32px; margin: 0 10px; vertical-align: middle;">
+      </a>
+    </div>
+    <div>
+      中信保诚资产管理有限责任公司 版权所有 &copy;2020 京ICP备20029116号-1<br>
+      投诉电话：010-85878800；投诉邮箱：tousujubao@citicpru.com.cn<br>
+      网安备 11010502041927号
+    </div>
+  </footer>
+</body>
+</html>
