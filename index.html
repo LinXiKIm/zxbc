@@ -23,37 +23,39 @@
       flex: 1;
     }
 
-   .topbar {
+   
+    .topbar {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       padding: 20px 60px;
       background: transparent;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    
-    .nav {
-      display: flex;
-      list-style: none;
-      gap: 40px;
-      font-size: 20px;
-      font-weight: 600;
-    }
-    
-    .nav li {
-      position: relative;
-      cursor: pointer;
-    }
-    
-    .nav .active {
-      color: #C02822;
-      border-bottom: 2px solid #C02822;
-    }
-
 
     .logo {
       height: 60px;
       margin-right: 40px;
     }
+
+    .nav {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      font-size: 16px;
+      position: relative;
+    }
+
+    .nav li {
+      position: relative;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .nav .active {
+      color: #C02822;
+      border-bottom: 2px solid #C02822;
+    }
+
 
     .nav li:hover .mega-menu {
       display: flex;
